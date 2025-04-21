@@ -1,0 +1,1 @@
+Find a prototype pollution gadget in Fastify to achieve XSS
