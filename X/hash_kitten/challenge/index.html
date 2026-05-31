@@ -1,0 +1,14 @@
+
+<html>
+ <body>
+  <form id="targetForm"></form>
+  Please enter a url, like as follows: <a href="?url=https://example.com">?url=https://example.com</a>
+ </body>
+ <script defer="true">
+  const url = new URLSearchParams(window.location.search).get('url');
+  if (url && URL.parse(url)?.protocol != 'javascript:') {
+      targetForm.action = url;
+      targetForm.submit();
+  }
+ </script>
+</html>
